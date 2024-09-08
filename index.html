@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .center{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 250px;
+            border: 2px solid rgb(202, 54, 54);
+        }
+        .input-box{
+            height: 40px;
+        }
+        .gap{
+            
+            padding: 20px;
+            line-height: normal;
+            gap: 20px;
+        }
+
+        .large{
+            width: 85px;
+        }
+        button{
+            background-color: purple;
+            color: white;
+            font-size: 1rem;
+            padding: 10px 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="center">
+        <div>
+            <h1>Calulator</h1>
+            <input type="number" id="num1" class="input-box"> <br> <br>
+            <input type="number" id="num2" class="input-box">
+            <br> 
+        </div>
+        <div class="gap">
+            <button onclick="add()" class="large">Add</button>
+            <button onclick="sub()" class="large">Subtract</button>
+            <br> <br>
+            <button onclick="mult()" class="large">Multiply</button>
+            <button onclick="div()" class="large">Divide</button>
+        </div>
+        <br>
+        <!-- <input type="number"  class="input-box" id="val"> -->
+         <h1 id="val">0</h1>
+    </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
